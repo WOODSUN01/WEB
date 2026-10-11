@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>向容紫微能量學院 | 探索命理智慧 啟動人生正能量</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Noto Serif TC & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Serif+TC:wght@400;600;700;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            100: '#fef3c7',
+                            300: '#fcd34d',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                            700: '#b45309',
+                        },
+                        cosmic: {
+                            900: '#0b0f19',
+                            800: '#111827',
+                            700: '#1e1b4b',
+                            600: '#312e81',
+                        },
+                        jade: {
+                            500: '#10b981',
+                            600: '#059669',
+                            700: '#047857',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif TC"', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Serif TC', sans-serif;
+            transition: background-color 0.5s ease, color 0.5s ease;
+            overflow-x: hidden;
+        }
+
+        /* Dynamic Theme Palettes */
+        body.theme-cosmic {
+            background-color: #0b0f19;
+            color: #f3f4f6;
+        }
+        body.theme-obsidian {
+            background-color: #06110e;
+            color: #f0fdf4;
+        }
+        body.theme-parchment {
+            background-color: #fbf8f1;
+            color: #1f2937;
+        }
+
+        /* Dynamic Glass Cards according to background theme */
+        body.theme-parchment .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(217, 119, 6, 0.2);
+            box-shadow: 0 10px 25px -5px rgba(180, 83, 9, 0.08);
+        }
+        body.theme-parchment h1, 
+        body.theme-parchment h2, 
+        body.theme-parchment h3, 
+        body.theme-parchment h4 {
+            color: #111827;
+        }
+        body.theme-parchment .text-gray-300,
+        body.theme-parchment .text-gray-400 {
+            color: #4b5563;
+        }
+        body.theme-parchment .bg-cosmic-800,
+        body.theme-parchment .bg-cosmic-900 {
+            background-color: #f4efe6;
+        }
+        body.theme-parchment header {
+            background: rgba(251, 248, 241, 0.9);
+            border-bottom-color: rgba(217, 119, 6, 0.2);
+        }
+
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #fef08a 0%, #f59e0b 50%, #b45309 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gold-border-glow {
+            border: 1px solid rgba(245, 158, 11, 0.3);
+            box-shadow: 0 0 15px rgba(245, 158, 11, 0.1);
+        }
+
+        .gold-border-glow:hover {
+            border-color: rgba(245, 158, 11, 0.7);
+            box-shadow: 0 0 25px rgba(245, 158, 11, 0.25);
+        }
+
+        .glass-card {
+            background: rgba(17, 24, 39, 0.75);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.3s ease;
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0b0f19;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #312e81;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #f59e0b;
+        }
+
+        /* Background Bagua/Compass rotation effect */
+        @keyframes rotateSlow {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .rotate-slow {
+            animation: rotateSlow 90s linear infinite;
+        }
+    </style>
+</head>
+<body class="theme-cosmic antialiased selection:bg-gold-500 selection:text-black">
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="fixed top-0 left-0 w-full z-50 transition-all duration-300 glass-card border-b border-gray-800" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Brand Logo -->
+                <a href="#" class="flex items-center space-x-3 group">
+                    <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-gold-600 via-yellow-500 to-gold-300 p-[2px] flex items-center justify-center shadow-lg shadow-gold-500/20 group-hover:scale-105 transition-transform">
+                        <div class="w-full h-full bg-cosmic-900 rounded-full flex items-center justify-center">
+                            <i class="fa-solid font-serif text-gold-500 text-xl font-bold">向</i>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="text-xl sm:text-2xl font-serif font-bold text-white tracking-wider block">向容紫微</span>
+                        <span class="text-xs text-gold-400 tracking-widest block uppercase -mt-1">Energy Academy</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex items-center space-x-6 text-sm font-medium">
+                    <a href="#about" class="text-gray-300 hover:text-gold-400 transition-colors">關於學院</a>
+                    <a href="#services" class="text-gray-300 hover:text-gold-400 transition-colors">紫微與八字</a>
+                    <a href="#fengshui" class="text-gray-300 hover:text-gold-400 transition-colors">風水與能量</a>
+                    <a href="#recommendation" class="text-gray-300 hover:text-gold-400 transition-colors">能量檢測</a>
+                    <a href="#testimonials" class="text-gray-300 hover:text-gold-400 transition-colors">學員見證</a>
+                    <a href="#faq" class="text-gray-300 hover:text-gold-400 transition-colors">常見問題</a>
+                </nav>
+
+                <!-- Header CTA Button & Theme Switcher -->
+                <div class="hidden md:flex items-center space-x-3">
+                    <!-- Background Theme Switcher Dropdown -->
+                    <div class="relative group">
+                        <button class="px-3 py-2 rounded-lg bg-gray-800/80 hover:bg-gray-700/80 text-gold-400 text-xs font-semibold flex items-center space-x-1.5 border border-gold-500/30 transition-all">
+                            <i class="fa-solid fa-palette"></i>
+                            <span>切換底色</span>
+                            <i class="fa-solid fa-chevron-down text-[10px]"></i>
+                        </button>
+                        <div class="absolute right-0 mt-2 w-40 glass-card rounded-xl border border-gold-500/30 shadow-xl hidden group-hover:block p-1.5 z-50">
+                            <button onclick="changeBgTheme('theme-cosmic')" class="w-full text-left px-3 py-2 rounded-lg text-xs text-gray-200 hover:bg-gold-500/20 hover:text-gold-300 flex items-center space-x-2">
+                                <span class="w-3 h-3 rounded-full bg-[#0b0f19] border border-gold-500"></span>
+                                <span>極光紫微 (夜空)</span>
+                            </button>
+                            <button onclick="changeBgTheme('theme-obsidian')" class="w-full text-left px-3 py-2 rounded-lg text-xs text-gray-200 hover:bg-gold-500/20 hover:text-gold-300 flex items-center space-x-2">
+                                <span class="w-3 h-3 rounded-full bg-[#06110e] border border-emerald-500"></span>
+                                <span>玄武墨玉 (深綠)</span>
+                            </button>
+                            <button onclick="changeBgTheme('theme-parchment')" class="w-full text-left px-3 py-2 rounded-lg text-xs text-gray-200 hover:bg-gold-500/20 hover:text-gold-300 flex items-center space-x-2">
+                                <span class="w-3 h-3 rounded-full bg-[#fbf8f1] border border-gold-600"></span>
+                                <span>典雅暖玉 (明亮)</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <a href="#booking" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-gold-600 to-gold-500 hover:from-gold-500 hover:to-gold-400 text-cosmic-900 font-bold text-sm shadow-md shadow-gold-500/20 hover:shadow-gold-500/40 transition-all transform hover:-translate-y-0.5">
+                        <i class="fa-solid fa-calendar-check mr-1.5"></i> 線上預約 / 報名
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center space-x-2">
+                    <button onclick="toggleMobileTheme()" class="p-2 text-gold-400 focus:outline-none" title="切換背景">
+                        <i class="fa-solid fa-palette text-lg"></i>
+                    </button>
+                    <button id="mobile-menu-btn" type="button" class="text-gray-300 hover:text-white focus:outline-none p-2" aria-label="Toggle Navigation">
+                        <i class="fa-solid fa-bars text-2xl" id="menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div class="md:hidden hidden bg-cosmic-900/95 border-b border-gray-800 backdrop-blur-xl px-4 pt-2 pb-6 space-y-3" id="mobile-menu">
+            <a href="#about" class="block py-2 text-gray-300 hover:text-gold-400 font-medium">關於學院</a>
+            <a href="#services" class="block py-2 text-gray-300 hover:text-gold-400 font-medium">紫微與八字</a>
+            <a href="#fengshui" class="block py-2 text-gray-300 hover:text-gold-400 font-medium">風水與能量</a>
+            <a href="#recommendation" class="block py-2 text-gray-300 hover:text-gold-400 font-medium">能量檢測</a>
+            <a href="#testimonials" class="block py-2 text-gray-300 hover:text-gold-400 font-medium">學員見證</a>
+            <a href="#faq" class="block py-2 text-gray-300 hover:text-gold-400 font-medium">常見問題</a>
+            
+            <!-- Mobile Theme Switching -->
+            <div class="pt-2 border-t border-gray-800 flex justify-around text-xs">
+                <button onclick="changeBgTheme('theme-cosmic')" class="px-3 py-1.5 rounded-lg bg-gray-800 text-gold-400">極光紫微</button>
+                <button onclick="changeBgTheme('theme-obsidian')" class="px-3 py-1.5 rounded-lg bg-gray-800 text-emerald-400">玄武墨玉</button>
+                <button onclick="changeBgTheme('theme-parchment')" class="px-3 py-1.5 rounded-lg bg-gray-800 text-amber-200">典雅暖玉</button>
+            </div>
+
+            <a href="#booking" class="block text-center py-3 mt-2 rounded-xl bg-gradient-to-r from-gold-600 to-gold-500 text-cosmic-900 font-bold">
+                <i class="fa-solid fa-calendar-check mr-1"></i> 線上預約 / 報名
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative min-h-screen flex items-center justify-center pt-24 pb-16 overflow-hidden">
+        <!-- Interactive Star Background Canvas -->
+        <canvas id="star-canvas" class="absolute inset-0 w-full h-full opacity-60 pointer-events-none"></canvas>
+
+        <!-- Decorative Background Elements -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] sm:w-[800px] sm:h-[800px] opacity-10 pointer-events-none">
+            <!-- SVG Tai Chi / Compass Ring -->
+            <svg class="w-full h-full text-gold-500 rotate-slow" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="250" cy="250" r="240" stroke="currentColor" stroke-width="2" stroke-dasharray="8 8"/>
+                <circle cx="250" cy="250" r="200" stroke="currentColor" stroke-width="1"/>
+                <path d="M 250 50 A 200 200 0 0 0 250 450 A 100 100 0 0 1 250 250 A 100 100 0 0 0 250 50 Z" fill="currentColor" opacity="0.15"/>
+                <circle cx="250" cy="150" r="20" fill="currentColor"/>
+                <circle cx="250" cy="350" r="20" fill="currentColor"/>
+            </svg>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full glass-card border border-gold-500/30 text-gold-400 text-sm mb-6 animate-pulse">
+                <i class="fa-solid fa-star text-xs"></i>
+                <span>向容老師親算解析 • 現代能量與古老命理的完美融合</span>
+            </div>
+
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-serif font-bold text-white tracking-wide leading-tight mb-6">
+                洞悉紫微八字天命<br/>
+                <span class="gold-gradient-text">重構現代生命能量磁場</span>
+            </h1>
+
+            <p class="max-w-3xl mx-auto text-lg sm:text-xl text-gray-300 leading-relaxed font-light mb-10">
+                「命不可改，但運可轉；風水非迷信，而是環境能量學。」<br class="hidden sm:inline"/>
+                向容紫微能量學院帶領您透視命盤密碼、調整空間氣場，啟動順遂富足的卓越人生。
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
+                <a href="#booking" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-gold-600 via-gold-500 to-yellow-400 text-cosmic-900 font-bold text-lg shadow-lg shadow-gold-500/25 hover:shadow-gold-500/50 hover:scale-105 transition-all text-center">
+                    <i class="fa-solid fa-compass mr-2"></i> 立即預約一對一親算
+                </a>
+                <a href="#recommendation" class="w-full sm:w-auto px-8 py-4 rounded-xl glass-card border border-gold-500/40 text-gold-300 hover:text-white hover:bg-gold-500/10 font-medium text-lg transition-all text-center">
+                    <i class="fa-solid fa-wand-magic-sparkles mr-2"></i> 30秒能量需求檢測
+                </a>
+            </div>
+
+            <!-- Key Highlights Stat Badges -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16 max-w-4xl mx-auto">
+                <div class="glass-card p-4 rounded-2xl border border-gray-800">
+                    <div class="text-3xl font-serif font-bold text-gold-400 mb-1">15+</div>
+                    <div class="text-xs text-gray-400">深耕命理風水年資</div>
+                </div>
+                <div class="glass-card p-4 rounded-2xl border border-gray-800">
+                    <div class="text-3xl font-serif font-bold text-gold-400 mb-1">8,000+</div>
+                    <div class="text-xs text-gray-400">服務個案與諮詢實績</div>
+                </div>
+                <div class="glass-card p-4 rounded-2xl border border-gray-800">
+                    <div class="text-3xl font-serif font-bold text-gold-400 mb-1">98.5%</div>
+                    <div class="text-xs text-gray-400">學員與客戶滿意度</div>
+                </div>
+                <div class="glass-card p-4 rounded-2xl border border-gray-800">
+                    <div class="text-3xl font-serif font-bold text-gold-400 mb-1">100%</div>
+                    <div class="text-xs text-gray-400">客製化能量調整方案</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT ACADEMY & FOUNDER -->
+    <section id="about" class="py-20 relative bg-cosmic-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Founder Photo Placeholder / Card -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-gold-500/30 group">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80" 
+                             alt="向容老師" 
+                             class="w-full h-[480px] object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                             onerror="this.onerror=null; this.src='https://placehold.co/600x800/111827/f59e0b?text=%E5%90%91%E5%AE%B9%E8%80%81%E5%B8%AB';">
+                        <div class="absolute inset-0 bg-gradient-to-t from-cosmic-900 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-4 glass-card rounded-xl border border-gold-500/20">
+                            <h3 class="text-xl font-serif font-bold text-gold-400">向容 創辦人</h3>
+                            <p class="text-xs text-gray-300 mt-1">中華命理能量學會資深顧問 • 紫微斗數與量子氣場導師</p>
+                        </div>
+                    </div>
+                    <!-- Decorative Golden Frame behind -->
+                    <div class="absolute -bottom-4 -right-4 w-full h-full border-2 border-gold-500/20 rounded-3xl -z-10 hidden sm:block"></div>
+                </div>
+
+                <!-- Academy Introduction Text -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center space-x-2 text-gold-400 font-medium text-sm tracking-widest uppercase">
+                        <span class="w-8 h-[2px] bg-gold-400"></span>
+                        <span>關於向容紫微能量學院</span>
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white leading-tight">
+                        突破傳統命理束縛，<br/>以科學角度引導命運方向
+                    </h2>
+
+                    <p class="text-gray-300 text-base sm:text-lg leading-relaxed font-light">
+                        「向容紫微能量學院」由向容老師創立，致力於將幾千年的傳統中國術數（紫微斗數、八字命理、陽宅風水）與現代量子氣場學、心理輔導相結合。
+                    </p>
+
+                    <p class="text-gray-300 text-base sm:text-lg leading-relaxed font-light">
+                        我們不賣弄玄虛、不誇大恐嚇，而是強調「知命、順勢、調和、造運」。透過精準的命盤推演與空間風水氣場微調，幫助您在事業選擇、婚姻感情、財富格局與身心健康上找到最佳解答。
+                    </p>
+
+                    <!-- Features Checklist -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-8 h-8 rounded-lg bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 shrink-0 mt-1">
+                                <i class="fa-solid fa-chart-pie text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-serif font-semibold text-white">邏輯化命盤剖析</h4>
+                                <p class="text-xs text-gray-400 mt-0.5">清晰解釋因果邏輯，絕不模糊帶過</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-3">
+                            <div class="w-8 h-8 rounded-lg bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 shrink-0 mt-1">
+                                <i class="fa-solid fa-house-chimney-window text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-serif font-semibold text-white">實用現代風水</h4>
+                                <p class="text-xs text-gray-400 mt-0.5">無需大興土木，以磁場調整提升運勢</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-3">
+                            <div class="w-8 h-8 rounded-lg bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 shrink-0 mt-1">
+                                <i class="fa-solid fa-user-shield text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-serif font-semibold text-white">全程絕對保密</h4>
+                                <p class="text-xs text-gray-400 mt-0.5">提供最私密且具備同理心的諮詢空間</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-3">
+                            <div class="w-8 h-8 rounded-lg bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 shrink-0 mt-1">
+                                <i class="fa-solid fa-graduation-cap text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-serif font-semibold text-white">系統化專業培訓</h4>
+                                <p class="text-xs text-gray-400 mt-0.5">傳承千年智慧，培訓專業命理諮詢師</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ZI WEI & BA ZI DISCIPLINES SECTION -->
+    <section id="services" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-gold-400 font-medium text-sm tracking-widest uppercase">Ancient Wisdom & Astrological Energy</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mt-2">紫微斗數與八字精算</h2>
+                <div class="w-16 h-1 bg-gradient-to-r from-gold-500 to-transparent mx-auto mt-4"></div>
+                <p class="text-gray-300 mt-4 font-light">從出生時間掌握生命藍圖，了解人格特質、運勢起伏與天賦財庫</p>
+            </div>
+
+            <!-- Grid of Zi Wei / Ba Zi Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1: 紫微斗數全盤精算 -->
+                <div class="glass-card rounded-2xl p-8 gold-border-glow transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-gold-500/20 to-purple-600/20 border border-gold-500/30 flex items-center justify-center text-gold-400 text-2xl mb-6">
+                            <i class="fa-solid fa-bahai"></i>
+                        </div>
+                        <h3 class="text-2xl font-serif font-bold text-white mb-3">紫微斗數 全盤精算</h3>
+                        <p class="text-gray-300 text-sm leading-relaxed mb-6 font-light">
+                            解析十二宮位（命宮、財帛、官祿、夫妻等），全方位揭示人生大運、流年趨勢、性格優勢與潛在危機。
+                        </p>
+                        <ul class="space-y-2.5 text-xs text-gray-300 mb-8">
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-gold-500 mr-2"></i> 個人命盤核心主星與吉凶星耀分析</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-gold-500 mr-2"></i> 十年大運與近三年流年吉凶防範</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-gold-500 mr-2"></i> 感情婚姻、事業發展、財富格局評估</li>
+                        </ul>
+                    </div>
+                    <a href="#booking" onclick="selectService('紫微斗數全盤精算')" class="block text-center py-3 rounded-xl border border-gold-500/40 text-gold-400 font-semibold text-sm hover:bg-gold-500 hover:text-cosmic-900 transition-colors">
+                        預約紫微精算
+                    </a>
+                </div>
+
+                <!-- Card 2: 八字五行喜忌與強運 -->
+                <div class="glass-card rounded-2xl p-8 gold-border-glow transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-gold-500 text-cosmic-900 text-[10px] font-bold px-3 py-1 rounded-bl-lg tracking-wider">
+                        熱門推薦
+                    </div>
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-gold-500/20 to-emerald-600/20 border border-gold-500/30 flex items-center justify-center text-gold-400 text-2xl mb-6">
+                            <i class="fa-solid fa-yin-yang"></i>
+                        </div>
+                        <h3 class="text-2xl font-serif font-bold text-white mb-3">八字五行 喜忌與強運</h3>
+                        <p class="text-gray-300 text-sm leading-relaxed mb-6 font-light">
+                            分析天干地支五行（金木水火土）的強弱平衡，找出「喜用神」，為您提供專屬的幸運色彩、方位與產業選擇建議。
+                        </p>
+                        <ul class="space-y-2.5 text-xs text-gray-300 mb-8">
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-gold-500 mr-2"></i> 五行缺漏診斷與能量補充秘法</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-gold-500 mr-2"></i> 適合的行業領域與創業時機點</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-gold-500 mr-2"></i> 開運色彩、飾品與日常生活調合建議</li>
+                        </ul>
+                    </div>
+                    <a href="#booking" onclick="selectService('八字五行喜忌與強運')" class="block text-center py-3 rounded-xl bg-gradient-to-r from-gold-600 to-gold-500 text-cosmic-900 font-bold text-sm hover:from-gold-500 hover:to-gold-400 transition-colors shadow-lg shadow-gold-500/20">
+                        預約八字解析
+                    </a>
+                </div>
+
+                <!-- Card 3: 雙人合婚與合作夥伴 -->
+                <div class="glass-card rounded-2xl p-8 gold-border-glow transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-gold-500/20 to-rose-600/20 border border-gold-500/30 flex items-center justify-center text-gold-400 text-2xl mb-6">
+                            <i class="fa-solid fa-heart-circle-bolt"></i>
+                        </div>
+                        <h3 class="text-2xl font-serif font-bold text-white mb-3">雙人命盤 合婚與合夥</h3>
+                        <p class="text-gray-300 text-sm leading-relaxed mb-6 font-light">
+                            深入評估兩人之間的磁場契合度、溝通盲點與互補優勢。適用於婚前合婚、夫妻關係改善及商業合夥人選擇。
+                        </p>
+                        <ul class="space-y-2.5 text-xs text-gray-300 mb-8">
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-gold-500 mr-2"></i> 雙人命盤互補與衝突點分析</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-gold-500 mr-2"></i> 感情化解之道與長久相處策略</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-gold-500 mr-2"></i> 商業合夥權力分配與財富協力</li>
+                        </ul>
+                    </div>
+                    <a href="#booking" onclick="selectService('雙人合婚與合作夥伴')" class="block text-center py-3 rounded-xl border border-gold-500/40 text-gold-400 font-semibold text-sm hover:bg-gold-500 hover:text-cosmic-900 transition-colors">
+                        預約雙人合算
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FENG SHUI & ENERGY SECTION -->
+    <section id="fengshui" class="py-20 relative bg-gradient-to-b from-cosmic-800/80 to-cosmic-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-gold-400 font-medium text-sm tracking-widest uppercase">Feng Shui & Spatial Energy</span>
+                    <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white leading-tight">
+                        陽宅風水佈局<br/>
+                        <span class="text-gold-400">打造迎財聚氣的居住與工作空間</span>
+                    </h2>
+                    <p class="text-gray-300 font-light leading-relaxed">
+                        「人因宅而立，宅因人而存。」空間的磁場每時每刻都在影響居住者的思考、健康與運勢。向容老師透過專業羅盤堪輿與現代空間科學，為您調和環境能量。
+                    </p>
+
+                    <div class="space-y-4">
+                        <div class="p-4 rounded-xl glass-card border border-gray-800 flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-full bg-gold-500/20 flex items-center justify-center text-gold-400 font-bold shrink-0">
+                                1
+                            </div>
+                            <div>
+                                <h4 class="font-serif font-semibold text-white">居家陽宅風水鑑定</h4>
+                                <p class="text-xs text-gray-400 mt-1">客廳財位、臥室文昌位、廚房灶位等氣場全面規劃，改善失眠、提升家庭和睦與個人財運。</p>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-xl glass-card border border-gray-800 flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-full bg-gold-500/20 flex items-center justify-center text-gold-400 font-bold shrink-0">
+                                2
+                            </div>
+                            <div>
+                                <h4 class="font-serif font-semibold text-white">商業辦公與店面佈局</h4>
+                                <p class="text-xs text-gray-400 mt-1">企業主辦公桌位、收銀檯財庫動線、門口納氣口規劃，吸引貴人與客源，化解小人與煞氣。</p>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-xl glass-card border border-gray-800 flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-full bg-gold-500/20 flex items-center justify-center text-gold-400 font-bold shrink-0">
+                                3
+                            </div>
+                            <div>
+                                <h4 class="font-serif font-semibold text-white">水晶與數字能量開運</h4>
+                                <p class="text-xs text-gray-400 mt-1">結合個人命盤五行缺口，精選天然水晶與電話/車牌號碼數字能量，隨身提昇正向磁場。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Graphic Showcase Grid -->
+                <div class="lg:col-span-6 grid grid-cols-2 gap-4">
+                    <div class="space-y-4">
+                        <div class="rounded-2xl overflow-hidden shadow-xl border border-gold-500/20 h-52 group">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" 
+                                 alt="陽宅風水空間" 
+                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                 onerror="this.onerror=null; this.src='https://placehold.co/600x400/1e1b4b/f59e0b?text=%E9%99%BD%E5%AE%85%E9%A2%A8%E6%B0%B4';">
+                        </div>
+                        <div class="rounded-2xl glass-card p-6 border border-gold-500/20 text-center">
+                            <i class="fa-solid fa-compass-drafting text-3xl text-gold-400 mb-2"></i>
+                            <h4 class="font-serif font-bold text-white text-base">線上/現場 堪輿</h4>
+                            <p class="text-xs text-gray-400 mt-1">提供平面圖線上鑑別與實地現場勘查服務</p>
+                        </div>
+                    </div>
+                    <div class="space-y-4 pt-8">
+                        <div class="rounded-2xl glass-card p-6 border border-gold-500/20 text-center">
+                            <i class="fa-solid fa-gem text-3xl text-gold-400 mb-2"></i>
+                            <h4 class="font-serif font-bold text-white text-base">水晶能量調和</h4>
+                            <p class="text-xs text-gray-400 mt-1">針對個人運勢欠缺，訂製開運陣法</p>
+                        </div>
+                        <div class="rounded-2xl overflow-hidden shadow-xl border border-gold-500/20 h-52 group">
+                            <img src="https://images.unsplash.com/photo-1515516969-d4008cc6241a?auto=format&fit=crop&w=600&q=80" 
+                                 alt="開運水晶陣" 
+                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                 onerror="this.onerror=null; this.src='https://placehold.co/600x400/1e1b4b/f59e0b?text=%E8%83%BD%E9%87%8F%E6%B0%B4%E6%99%B6';">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE ENERGY / SERVICE RECOMMENDER TOOL -->
+    <section id="recommendation" class="py-20 relative bg-cosmic-900 border-y border-gray-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="text-gold-400 font-medium text-sm tracking-widest uppercase">Interactive Energy Self-Assessment</span>
+            <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mt-2">個人化能量與命理建議檢測</h2>
+            <p class="text-gray-300 mt-3 text-sm font-light">選擇您當前最關心的議題，系統將即時為您提供初步方向建議與合適的學院服務</p>
+
+            <div class="mt-10 glass-card p-6 sm:p-10 rounded-3xl border border-gold-500/30 shadow-2xl text-left">
+                <!-- Step 1: Issue Selection -->
+                <div class="mb-8">
+                    <label class="block text-sm font-serif text-gold-300 font-semibold mb-3">
+                        <i class="fa-solid fa-1 mr-2 text-gold-500"></i> 請選擇您目前最希望能突破或調整的方向：
+                    </label>
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3" id="quiz-categories">
+                        <button type="button" onclick="selectQuizCategory(this, 'career')" class="quiz-btn active p-4 rounded-xl border border-gold-500 bg-gold-500/20 text-white font-medium text-center transition-all text-sm flex flex-col items-center justify-center space-y-2">
+                            <i class="fa-solid fa-briefcase text-xl text-gold-400"></i>
+                            <span>事業與創業</span>
+                        </button>
+                        <button type="button" onclick="selectQuizCategory(this, 'wealth')" class="quiz-btn p-4 rounded-xl border border-gray-700 bg-cosmic-800 text-gray-300 hover:border-gold-500/50 font-medium text-center transition-all text-sm flex flex-col items-center justify-center space-y-2">
+                            <i class="fa-solid fa-coins text-xl text-gold-400"></i>
+                            <span>正財與偏財</span>
+                        </button>
+                        <button type="button" onclick="selectQuizCategory(this, 'relationship')" class="quiz-btn p-4 rounded-xl border border-gray-700 bg-cosmic-800 text-gray-300 hover:border-gold-500/50 font-medium text-center transition-all text-sm flex flex-col items-center justify-center space-y-2">
+                            <i class="fa-solid fa-heart text-xl text-rose-400"></i>
+                            <span>婚姻與感情</span>
+                        </button>
+                        <button type="button" onclick="selectQuizCategory(this, 'home')" class="quiz-btn p-4 rounded-xl border border-gray-700 bg-cosmic-800 text-gray-300 hover:border-gold-500/50 font-medium text-center transition-all text-sm flex flex-col items-center justify-center space-y-2">
+                            <i class="fa-solid fa-house text-xl text-emerald-400"></i>
+                            <span>住宅與家運</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Result Advice Box (Dynamic) -->
+                <div id="quiz-result" class="p-6 rounded-2xl bg-cosmic-800/90 border border-gold-500/30 space-y-3">
+                    <div class="flex items-center space-x-2 text-gold-400 font-serif font-bold text-lg">
+                        <i class="fa-solid fa-sparkles"></i>
+                        <span id="result-title">【事業與創業】建議分析</span>
+                    </div>
+                    <p id="result-desc" class="text-sm text-gray-300 leading-relaxed font-light">
+                        事業卡關常與紫微命盤中「官祿宮」的主星能量或大運流年轉化有關。若近期面臨轉職、創業升遷或小人干擾，建議透過紫微斗數全盤解析掌握關鍵突破契機，並搭配辦公室座位風水佈局強化貴人運。
+                    </p>
+                    <div class="pt-2 flex flex-col sm:flex-row items-sm-center justify-between gap-4 border-t border-gray-700/60">
+                        <span class="text-xs text-gold-300 flex items-center">
+                            <i class="fa-solid fa-circle-info mr-1.5"></i> 建議服務：<strong id="result-recommended-service" class="underline ml-1">紫微斗數全盤精算 + 商業風水</strong>
+                        </span>
+                        <a href="#booking" id="result-link" class="text-xs font-bold text-cosmic-900 bg-gold-500 px-4 py-2 rounded-lg hover:bg-gold-400 transition-colors inline-block text-center">
+                            帶入此建議並預約 <i class="fa-solid fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section id="testimonials" class="py-20 relative bg-cosmic-800/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-gold-400 font-medium text-sm tracking-widest uppercase">Real Transformational Stories</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mt-2">學員與客戶真誠見證</h2>
+                <div class="w-16 h-1 bg-gradient-to-r from-gold-500 to-transparent mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="glass-card p-6 rounded-2xl border border-gray-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-gold-400 space-x-1 mb-4 text-xs">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-300 text-sm leading-relaxed mb-6 italic">
+                            「當初創業面臨合夥糾紛與資金周轉困境，經過向容老師精算紫微流年並調整辦公室風水財位後，三個月內不僅順利獲得新投資，還遇到了很棒的合作夥伴！」
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-3 pt-4 border-t border-gray-800">
+                        <div class="w-10 h-10 rounded-full bg-gold-500/20 flex items-center justify-center font-bold text-gold-400">
+                            林
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white text-sm">林先生 (科技業創辦人)</h4>
+                            <span class="text-xs text-gray-400">紫微精算 + 商業風水</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="glass-card p-6 rounded-2xl border border-gray-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-gold-400 space-x-1 mb-4 text-xs">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-300 text-sm leading-relaxed mb-6 italic">
+                            「老師講解命盤超級客觀專業，沒有傳統算命那種讓人害怕的說法，而是很有邏輯地分析我的性格優缺點與婚姻盲點。現在跟老公關係融洽許多，內心平靜許多。」
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-3 pt-4 border-t border-gray-800">
+                        <div class="w-10 h-10 rounded-full bg-rose-500/20 flex items-center justify-center font-bold text-rose-400">
+                            陳
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white text-sm">陳小姐 (高階主管)</h4>
+                            <span class="text-xs text-gray-400">雙人合婚與感情諮詢</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="glass-card p-6 rounded-2xl border border-gray-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-gold-400 space-x-1 mb-4 text-xs">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-300 text-sm leading-relaxed mb-6 italic">
+                            「參加了學院的紫微初階與中階課程，向容老師把繁複的星曜系統整理得非常有條理！不僅學會幫自己與家人看盤，也讓我在面對人生重大決定時更有底氣。」
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-3 pt-4 border-t border-gray-800">
+                        <div class="w-10 h-10 rounded-full bg-emerald-500/20 flex items-center justify-center font-bold text-emerald-400">
+                            張
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white text-sm">張醫師 (學院學員)</h4>
+                            <span class="text-xs text-gray-400">紫微斗數系統培訓班</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOOKING & REGISTRATION FORM SECTION -->
+    <section id="booking" class="py-20 relative bg-gradient-to-b from-cosmic-900 via-cosmic-800 to-cosmic-900">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-gold-400 font-medium text-sm tracking-widest uppercase">Online Reservation & Registration</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mt-2">線上報名與諮詢預約</h2>
+                <p class="text-gray-300 text-sm mt-3 font-light">請填寫下方基本資訊，我們將有專人於 24 小時內與您聯繫確認細節與時間</p>
+            </div>
+
+            <div class="glass-card p-6 sm:p-10 rounded-3xl border border-gold-500/30 shadow-2xl relative">
+                <form id="consultation-form" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                    <!-- Service Category Selection -->
+                    <div>
+                        <label class="block text-sm font-medium text-gold-300 mb-2">
+                            預約項目 / 課程報名 <span class="text-rose-500">*</span>
+                        </label>
+                        <select id="service-select" required class="w-full px-4 py-3 rounded-xl bg-cosmic-900 border border-gray-700 text-white focus:outline-none focus:border-gold-500 transition-colors">
+                            <option value="">-- 請選擇欲預約的服務或課程 --</option>
+                            <option value="紫微斗數全盤精算">紫微斗數全盤精算 (個人大運/流年)</option>
+                            <option value="八字五行喜忌與強運">八字五行喜忌與強運調和</option>
+                            <option value="雙人合婚與合作夥伴">雙人合婚 / 商業合夥評估</option>
+                            <option value="陽宅居家風水鑑定">陽宅居家風水實勘與規劃</option>
+                            <option value="商業辦公風水佈局">商業辦公 / 店面風水佈局</option>
+                            <option value="紫微能量培訓課程">紫微斗數系統專業培訓課程</option>
+                        </select>
+                    </div>
+
+                    <!-- Personal Information Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">
+                                您的姓名 <span class="text-rose-500">*</span>
+                            </label>
+                            <input type="text" required placeholder="例：王小明" class="w-full px-4 py-3 rounded-xl bg-cosmic-900 border border-gray-700 text-white focus:outline-none focus:border-gold-500 transition-colors">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">
+                                性別
+                            </label>
+                            <div class="flex items-center space-x-6 pt-2">
+                                <label class="flex items-center space-x-2 cursor-pointer">
+                                    <input type="radio" name="gender" value="male" checked class="text-gold-500 focus:ring-gold-500">
+                                    <span class="text-sm text-gray-300">男 (乾造)</span>
+                                </label>
+                                <label class="flex items-center space-x-2 cursor-pointer">
+                                    <input type="radio" name="gender" value="female" class="text-gold-500 focus:ring-gold-500">
+                                    <span class="text-sm text-gray-300">女 (坤造)</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Details Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">
+                                聯絡電話 <span class="text-rose-500">*</span>
+                            </label>
+                            <input type="tel" required placeholder="0912-345-678" class="w-full px-4 py-3 rounded-xl bg-cosmic-900 border border-gray-700 text-white focus:outline-none focus:border-gold-500 transition-colors">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">
+                                電子信箱 Email <span class="text-rose-500">*</span>
+                            </label>
+                            <input type="email" required placeholder="yourname@example.com" class="w-full px-4 py-3 rounded-xl bg-cosmic-900 border border-gray-700 text-white focus:outline-none focus:border-gold-500 transition-colors">
+                        </div>
+                    </div>
+
+                    <!-- Birth Date & Shichen (Crucial for Zi Wei) -->
+                    <div class="p-4 rounded-2xl bg-cosmic-900/60 border border-gray-800 space-y-4">
+                        <div class="flex items-center justify-between">
+                            <label class="text-sm font-serif font-semibold text-gold-400">
+                                <i class="fa-solid fa-clock mr-1.5"></i> 出生生辰資訊（紫微斗數必填）
+                            </label>
+                            <span class="text-xs text-gray-400">若不知道確切時辰，專人將協助對盤</span>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                            <div>
+                                <label class="block text-xs text-gray-400 mb-1">歷法類別</label>
+                                <select class="w-full px-3 py-2.5 rounded-lg bg-cosmic-900 border border-gray-700 text-sm text-white focus:border-gold-500">
+                                    <option value="solar">國曆 / 陽曆 (Solar)</option>
+                                    <option value="lunar">農曆 / 陰曆 (Lunar)</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs text-gray-400 mb-1">出生年月日</label>
+                                <input type="date" class="w-full px-3 py-2.5 rounded-lg bg-cosmic-900 border border-gray-700 text-sm text-white focus:border-gold-500">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs text-gray-400 mb-1">出生時辰 (十二時辰)</label>
+                                <select class="w-full px-3 py-2.5 rounded-lg bg-cosmic-900 border border-gray-700 text-sm text-white focus:border-gold-500">
+                                    <option value="unknown">不清楚時辰 (專人對盤)</option>
+                                    <option value="zi">子時 (23:00-01:00)</option>
+                                    <option value="chou">丑時 (01:00-03:00)</option>
+                                    <option value="yin">寅時 (03:00-05:00)</option>
+                                    <option value="mao">卯時 (05:00-07:00)</option>
+                                    <option value="chen">辰時 (07:00-09:00)</option>
+                                    <option value="si">巳時 (09:00-11:00)</option>
+                                    <option value="wu">午時 (11:00-13:00)</option>
+                                    <option value="wei">未時 (13:00-15:00)</option>
+                                    <option value="shen">申時 (15:00-17:00)</option>
+                                    <option value="you">酉時 (17:00-19:00)</option>
+                                    <option value="xu">戌時 (19:00-21:00)</option>
+                                    <option value="hai">亥時 (21:00-23:00)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Consultation Method & Preferred Time -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">諮詢方式</label>
+                            <select class="w-full px-4 py-3 rounded-xl bg-cosmic-900 border border-gray-700 text-white focus:outline-none focus:border-gold-500">
+                                <option value="online">線上視訊諮詢 (LINE / Zoom)</option>
+                                <option value="in-person">工作室現場親算 (台北/新北)</option>
+                                <option value="site-visit">風水現場堪輿 (全台親赴)</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">希望預約時段</label>
+                            <select class="w-full px-4 py-3 rounded-xl bg-cosmic-900 border border-gray-700 text-white focus:outline-none focus:border-gold-500">
+                                <option value="weekday-day">平日白天 (10:00 - 17:00)</option>
+                                <option value="weekday-night">平日晚上 (18:30 - 21:00)</option>
+                                <option value="weekend">週末例假日 (預約踴躍)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Note / Special Questions -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-300 mb-2">備註 / 目前想提問的重點議題</label>
+                        <textarea rows="3" placeholder="請簡述您最關心的問題或空間現況（例如：近期想換工作、住宅經常失眠、創業時機點...）" class="w-full px-4 py-3 rounded-xl bg-cosmic-900 border border-gray-700 text-white focus:outline-none focus:border-gold-500 transition-colors"></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div>
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-gold-600 via-gold-500 to-yellow-400 text-cosmic-900 font-bold text-lg shadow-xl shadow-gold-500/25 hover:shadow-gold-500/40 hover:scale-[1.01] transition-all">
+                            <i class="fa-solid fa-paper-plane mr-2"></i> 送出預約申請
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section id="faq" class="py-20 relative bg-cosmic-900">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-gold-400 font-medium text-sm tracking-widest uppercase">Frequently Asked Questions</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mt-2">常見問題解答</h2>
+                <div class="w-16 h-1 bg-gradient-to-r from-gold-500 to-transparent mx-auto mt-4"></div>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="glass-card rounded-2xl border border-gray-800 overflow-hidden">
+                    <button class="w-full p-6 text-left flex items-center justify-between focus:outline-none" onclick="toggleFaq(this)">
+                        <span class="font-serif font-semibold text-white text-base sm:text-lg">Q1. 如果我不清楚確切的出生時辰（例如只知道幾點幾分或大約時間），還能算紫微斗數嗎？</span>
+                        <i class="fa-solid fa-chevron-down text-gold-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-sm text-gray-300 font-light border-t border-gray-800/50 pt-4">
+                        可以的。向容老師具備豐富的「定時辰 / 對盤」經驗。諮詢前專人會先引導您填寫過去幾項重大人生事件的時間點（如結婚、創業、重大遷徙、家人健康等），透過命盤對照協助您鎖定最契合的時辰。
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="glass-card rounded-2xl border border-gray-800 overflow-hidden">
+                    <button class="w-full p-6 text-left flex items-center justify-between focus:outline-none" onclick="toggleFaq(this)">
+                        <span class="font-serif font-semibold text-white text-base sm:text-lg">Q2. 線上視訊諮詢與現場親算的解析效果會有差異嗎？</span>
+                        <i class="fa-solid fa-chevron-down text-gold-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-sm text-gray-300 font-light border-t border-gray-800/50 pt-4">
+                        完全不會。紫微斗數與八字是以出生時間與天文星曜運動為依據，線上視訊諮詢會全程共享螢幕畫畫命盤，內容與現場親算100%一致。視訊諮詢結束後亦會提供完整錄音或重點摘要供您保存複習。
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="glass-card rounded-2xl border border-gray-800 overflow-hidden">
+                    <button class="w-full p-6 text-left flex items-center justify-between focus:outline-none" onclick="toggleFaq(this)">
+                        <span class="font-serif font-semibold text-white text-base sm:text-lg">Q3. 風水調整一定要砸大錢敲牆大改建嗎？</span>
+                        <i class="fa-solid fa-chevron-down text-gold-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-sm text-gray-300 font-light border-t border-gray-800/50 pt-4">
+                        不需要！向容老師倡導「現代實用風水學」，核心理念在於流暢動線與磁場順應。多數情況下只需透過家具位置微調、色彩轉換、植物或天然水晶陣擺設即可達成氣場調合的效果，不需過度破壞裝潢。
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="glass-card rounded-2xl border border-gray-800 overflow-hidden">
+                    <button class="w-full p-6 text-left flex items-center justify-between focus:outline-none" onclick="toggleFaq(this)">
+                        <span class="font-serif font-semibold text-white text-base sm:text-lg">Q4. 學院的紫微培訓課程適合沒有任何命理基礎的新手嗎？</span>
+                        <i class="fa-solid fa-chevron-down text-gold-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-sm text-gray-300 font-light border-t border-gray-800/50 pt-4">
+                        非常適合！課程採系統化教學，避開艱澀難懂的古文密碼，從十四主星性格白話拆解、宮位連動、一直到實際解盤演練。學員皆能從零基礎循序漸進學會為自己與他人看盤。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-cosmic-900 border-t border-gray-800 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <!-- Brand Info -->
+                <div class="md:col-span-1 space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full bg-gold-500/20 border border-gold-500/50 flex items-center justify-center font-serif font-bold text-gold-400">
+                            向
+                        </div>
+                        <span class="text-xl font-serif font-bold text-white tracking-wider">向容紫微能量學院</span>
+                    </div>
+                    <p class="text-xs text-gray-400 leading-relaxed font-light">
+                        引領現代命理新風貌，結合紫微八字與空間氣場，陪伴您探索生命藍圖、實現美好人生。
+                    </p>
+                    <div class="flex space-x-3 text-gray-400">
+                        <a href="#" class="w-8 h-8 rounded-full bg-cosmic-800 border border-gray-700 flex items-center justify-center hover:text-gold-400 hover:border-gold-500 transition-colors"><i class="fa-brands fa-line"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-cosmic-800 border border-gray-700 flex items-center justify-center hover:text-gold-400 hover:border-gold-500 transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-cosmic-800 border border-gray-700 flex items-center justify-center hover:text-gold-400 hover:border-gold-500 transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-cosmic-800 border border-gray-700 flex items-center justify-center hover:text-gold-400 hover:border-gold-500 transition-colors"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-serif font-bold text-white text-sm mb-4">服務項目</h4>
+                    <ul class="space-y-2 text-xs text-gray-400">
+                        <li><a href="#services" class="hover:text-gold-400 transition-colors">紫微斗數全盤精算</a></li>
+                        <li><a href="#services" class="hover:text-gold-400 transition-colors">八字五行喜忌調整</a></li>
+                        <li><a href="#services" class="hover:text-gold-400 transition-colors">雙人合婚與合夥</a></li>
+                        <li><a href="#fengshui" class="hover:text-gold-400 transition-colors">陽宅/商業風水實勘</a></li>
+                        <li><a href="#fengshui" class="hover:text-gold-400 transition-colors">水晶氣場與數字開運</a></li>
+                    </ul>
+                </div>
+
+                <!-- Navigation -->
+                <div>
+                    <h4 class="font-serif font-bold text-white text-sm mb-4">快速導覽</h4>
+                    <ul class="space-y-2 text-xs text-gray-400">
+                        <li><a href="#about" class="hover:text-gold-400 transition-colors">關於向容老師</a></li>
+                        <li><a href="#recommendation" class="hover:text-gold-400 transition-colors">能量自測工具</a></li>
+                        <li><a href="#testimonials" class="hover:text-gold-400 transition-colors">學員成功見證</a></li>
+                        <li><a href="#faq" class="hover:text-gold-400 transition-colors">預約常見問題</a></li>
+                        <li><a href="#booking" class="hover:text-gold-400 transition-colors">線上預約報名</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="font-serif font-bold text-white text-sm mb-4">聯絡學院</h4>
+                    <ul class="space-y-2 text-xs text-gray-400">
+                        <li class="flex items-center"><i class="fa-solid fa-location-dot w-5 text-gold-400"></i> 台北市大安區敦化南路二段（採完全預約制）</li>
+                        <li class="flex items-center"><i class="fa-solid fa-phone w-5 text-gold-400"></i> 02-2700-XXXX / 0912-XXX-XXX</li>
+                        <li class="flex items-center"><i class="fa-brands fa-line w-5 text-gold-400"></i> LINE 官方帳號: @xiangrong_energy</li>
+                        <li class="flex items-center"><i class="fa-solid fa-envelope w-5 text-gold-400"></i> contact@xiangrong-academy.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800/80 pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500">
+                <p>© 2026 向容紫微能量學院 Xiang Rong Zi Wei Energy Academy. All Rights Reserved.</p>
+                <p class="mt-2 sm:mt-0">本網站命理與風水建議僅供參考與心靈成長指引</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SUCCESS MODAL (Hidden by default) -->
+    <div id="success-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm hidden">
+        <div class="glass-card max-w-md w-full p-8 rounded-3xl border border-gold-500/40 text-center relative animate-bounce-short">
+            <div class="w-16 h-16 bg-gold-500/20 text-gold-400 rounded-full flex items-center justify-center mx-auto text-3xl mb-4 border border-gold-500/40">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <h3 class="text-2xl font-serif font-bold text-white mb-2">預約申請已成功送出！</h3>
+            <p class="text-xs text-gray-300 leading-relaxed mb-6 font-light">
+                感謝您的預約。向容紫微能量學院諮詢團隊將於 24 小時內以 Phone / LINE 與您確認時間與生辰細節。
+            </p>
+            <button onclick="closeModal()" class="w-full py-3 rounded-xl bg-gold-500 text-cosmic-900 font-bold hover:bg-gold-400 transition-colors text-sm">
+                關閉視窗
+            </button>
+        </div>
+    </div>
+
+    <!-- INTERACTIVE JAVASCRIPT -->
+    <script>
+        // Theme Switching Logic
+        const themes = ['theme-cosmic', 'theme-obsidian', 'theme-parchment'];
+        let currentThemeIndex = 0;
+
+        function changeBgTheme(themeClass) {
+            document.body.classList.remove(...themes);
+            document.body.classList.add(themeClass);
+            
+            // Adjust canvas star color depending on light or dark background
+            if (themeClass === 'theme-parchment') {
+                window.starColor = '#d97706';
+            } else if (themeClass === 'theme-obsidian') {
+                window.starColor = '#34d399';
+            } else {
+                window.starColor = '#f59e0b';
+            }
+        }
+
+        function toggleMobileTheme() {
+            currentThemeIndex = (currentThemeIndex + 1) % themes.length;
+            changeBgTheme(themes[currentThemeIndex]);
+        }
+
+        // 1. Mobile Menu Toggle Logic
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+
+        // Close mobile menu on link click
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            });
+        });
+
+        // 2. Select Service from Card Buttons directly into the booking form
+        function selectService(serviceName) {
+            const selectEl = document.getElementById('service-select');
+            if (selectEl) {
+                selectEl.value = serviceName;
+            }
+        }
+
+        // 3. Quiz / Recommendation Engine
+        const quizData = {
+            career: {
+                title: "【事業與創業】建議分析",
+                desc: "事業卡關常與紫微命盤中「官祿宮」的主星能量或大運流年轉化有關。若近期面臨轉職、創業升遷或小人干擾，建議透過紫微斗數全盤解析掌握關鍵突破契機，並搭配辦公室座位風水佈局強化貴人運。",
+                service: "紫微斗數全盤精算 + 商業風水"
+            },
+            wealth: {
+                title: "【正財與偏財】建議分析",
+                desc: "財運不佳往往源於「財帛宮」與「田宅宮」能量不順，或是居住空間的財位受煞。建議透過八字五行喜忌檢測補足財庫缺口，並檢視家中客廳及廚房財位動線，鎖住財氣。",
+                service: "八字五行喜忌與強運 + 居家財位佈局"
+            },
+            relationship: {
+                title: "【婚姻與感情】建議分析",
+                desc: "感情課題常顯現在紫微「夫妻宮」與八字桃花星上。無論是單身求良緣、或是夫妻相處摩擦，透過雙人合盤能深入剖析彼此性格盲點與溝通密碼，重拾和諧能量。",
+                service: "雙人命盤 合婚與感情諮詢"
+            },
+            home: {
+                title: "【住宅與家運】建議分析",
+                desc: "家宅是全家人的能量充電站。若家人頻繁失眠、健康微恙或運勢沉悶，建議進行陽宅風水現場堪輿，透過空間氣場微調與開運水晶佈陣，引導正向吉氣入宅。",
+                service: "陽宅居家風水實勘與規劃"
+            }
+        };
+
+        function selectQuizCategory(btn, categoryKey) {
+            // Update button styles
+            document.querySelectorAll('.quiz-btn').forEach(b => {
+                b.classList.remove('active', 'border-gold-500', 'bg-gold-500/20', 'text-white');
+                b.classList.add('border-gray-700', 'bg-cosmic-800', 'text-gray-300');
+            });
+
+            btn.classList.add('active', 'border-gold-500', 'bg-gold-500/20', 'text-white');
+            btn.classList.remove('border-gray-700', 'bg-cosmic-800', 'text-gray-300');
+
+            // Update result display
+            const data = quizData[categoryKey];
+            if (data) {
+                document.getElementById('result-title').innerText = data.title;
+                document.getElementById('result-desc').innerText = data.desc;
+                document.getElementById('result-recommended-service').innerText = data.service;
+            }
+        }
+
+        // 4. FAQ Accordion Logic
+        function toggleFaq(btn) {
+            const content = btn.nextElementSibling;
+            const icon = btn.querySelector('i');
+            
+            content.classList.toggle('hidden');
+            if (content.classList.contains('hidden')) {
+                icon.style.transform = 'rotate(0deg)';
+            } else {
+                icon.style.transform = 'rotate(180deg)';
+            }
+        }
+
+        // 5. Handle Booking Form Submission
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            // Show modal
+            document.getElementById('success-modal').classList.remove('hidden');
+            e.target.reset();
+        }
+
+        function closeModal() {
+            document.getElementById('success-modal').classList.add('hidden');
+        }
+
+        // 6. Cosmic Star Background Canvas Effect
+        window.starColor = '#f59e0b';
+        const canvas = document.getElementById('star-canvas');
+        if (canvas) {
+            const ctx = canvas.getContext('2d');
+            let stars = [];
+            const numStars = window.innerWidth < 640 ? 50 : 120;
+
+            function resizeCanvas() {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+            }
+            resizeCanvas();
+            window.addEventListener('resize', resizeCanvas);
+
+            class Star {
+                constructor() {
+                    this.reset();
+                }
+
+                reset() {
+                    this.x = Math.random() * canvas.width;
+                    this.y = Math.random() * canvas.height;
+                    this.size = Math.random() * 1.8 + 0.2;
+                    this.alpha = Math.random();
+                    this.speed = Math.random() * 0.01 + 0.005;
+                    this.dir = Math.random() > 0.5 ? 1 : -1;
+                }
+
+                update() {
+                    this.alpha += this.speed * this.dir;
+                    if (this.alpha >= 1 || this.alpha <= 0.1) {
+                        this.dir *= -1;
+                    }
+                }
+
+                draw() {
+                    ctx.save();
+                    ctx.globalAlpha = this.alpha;
+                    ctx.fillStyle = window.starColor || '#f59e0b';
+                    ctx.beginPath();
+                    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                    ctx.fill();
+                    ctx.restore();
+                }
+            }
+
+            for (let i = 0; i < numStars; i++) {
+                stars.push(new Star());
+            }
+
+            function animateStars() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                stars.forEach(star => {
+                    star.update();
+                    star.draw();
+                });
+                requestAnimationFrame(animateStars);
+            }
+
+            window.onload = function() {
+                animateStars();
+            };
+        }
+    </script>
+</body>
+</html>
