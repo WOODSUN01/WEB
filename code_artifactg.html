@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>向容紫微能量學院 | 20年紫微八字風水高階策略顧問</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800&family=Noto+Serif+TC:wght@400;600;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0B0D17',
+                            card: '#131628',
+                            surface: '#1A1E36',
+                            gold: '#D4AF37',
+                            goldLight: '#F3E5AB',
+                            goldDark: '#AA7C11',
+                            purple: '#4A154B',
+                            purpleGlow: '#6B2D5C',
+                            accent: '#C5A059'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif TC"', 'serif'],
+                        cinzel: ['Cinzel', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0B0D17;
+            color: #E2E8F0;
+            font-family: 'Plus Jakarta Sans', 'Noto Serif TC', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #FFF6D6 0%, #D4AF37 50%, #AA7C11 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gold-border-gradient {
+            border-image: linear-gradient(to right, #D4AF37, #4A154B, #D4AF37) 1;
+        }
+
+        .glass-card {
+            background: rgba(19, 22, 40, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(212, 175, 55, 0.15);
+        }
+
+        .glass-card:hover {
+            border-color: rgba(212, 175, 55, 0.4);
+            box-shadow: 0 0 25px rgba(212, 175, 55, 0.1);
+        }
+
+        .star-pattern {
+            background-image: radial-gradient(rgba(212, 175, 55, 0.15) 1px, transparent 0);
+            background-size: 32px 32px;
+        }
+
+        /* Custom Modal Transition */
+        .modal-active {
+            display: flex !important;
+        }
+    </style>
+</head>
+<body class="star-pattern selection:bg-brand-gold selection:text-brand-dark">
+
+    <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-brand-dark/80 backdrop-blur-md border-b border-brand-gold/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 rounded-full border border-brand-gold/40 flex items-center justify-center bg-brand-surface/50 group-hover:border-brand-gold transition">
+                    <i class="fa-solid font-cinzel text-brand-gold text-lg">向</i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-serif font-bold text-lg tracking-wider gold-gradient-text">向容紫微能量學院</span>
+                    <span class="font-cinzel text-[10px] text-gray-400 tracking-widest uppercase">Xiang Rong Academy</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Items -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide">
+                <a href="#about" class="hover:text-brand-gold transition duration-200">關於向容</a>
+                <a href="#philosophy" class="hover:text-brand-gold transition duration-200">核心理念</a>
+                <a href="#services" class="hover:text-brand-gold transition duration-200">諮詢服務</a>
+                <a href="#cases" class="hover:text-brand-gold transition duration-200">案例實績</a>
+                <a href="#contact" class="px-5 py-2.5 rounded-full border border-brand-gold/50 text-brand-gold hover:bg-brand-gold hover:text-brand-dark transition duration-300 shadow-lg shadow-brand-gold/10 font-semibold">
+                    <i class="fa-regular fa-calendar-check mr-2"></i>預約諮詢
+                </a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-brand-gold focus:outline-none p-2">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-card border-b border-brand-gold/20 px-4 pt-2 pb-6 space-y-3">
+            <a href="#about" class="mobile-link block px-3 py-2 rounded-md hover:bg-brand-surface text-gray-200 hover:text-brand-gold">關於向容</a>
+            <a href="#philosophy" class="mobile-link block px-3 py-2 rounded-md hover:bg-brand-surface text-gray-200 hover:text-brand-gold">核心理念</a>
+            <a href="#services" class="mobile-link block px-3 py-2 rounded-md hover:bg-brand-surface text-gray-200 hover:text-brand-gold">諮詢服務</a>
+            <a href="#cases" class="mobile-link block px-3 py-2 rounded-md hover:bg-brand-surface text-gray-200 hover:text-brand-gold">案例實績</a>
+            <a href="#contact" class="mobile-link block w-full text-center mt-4 px-5 py-2.5 rounded-full bg-brand-gold text-brand-dark font-semibold">
+                預約諮詢
+            </a>
+        </div>
+    </header>
+
+    <section class="relative min-h-screen flex items-center justify-center pt-24 pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <!-- Ambient Background Glows -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-brand-purple/20 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute bottom-10 right-10 w-[300px] h-[300px] bg-brand-gold/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="max-w-5xl mx-auto text-center relative z-10 space-y-8">
+            <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full border border-brand-gold/30 bg-brand-surface/40 backdrop-blur-md mb-2">
+                <span class="w-2 h-2 rounded-full bg-brand-gold animate-pulse"></span>
+                <span class="text-xs sm:text-sm font-medium tracking-wider text-brand-goldLight">採預約制 • 深度專注高品質諮詢</span>
+            </div>
+
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-serif font-bold tracking-tight leading-tight sm:leading-tight">
+                以傳統智慧為鑰<br/>
+                <span class="gold-gradient-text">解構人生格局 布局事業新局</span>
+            </h1>
+
+            <p class="max-w-3xl mx-auto text-base sm:text-xl text-gray-300 font-light leading-relaxed">
+                20年紫微、八字與風水實戰經驗。<br class="hidden sm:inline"/>
+                我是 <strong class="text-brand-gold font-semibold">向容</strong>，企業主的隱形決策軍師與高階商務能量調頻顧問。<br/>
+                陪伴你在關鍵時刻看見潛力，將突破化為精準行動。
+            </p>
+
+            <!-- Call to Actions -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-brand-gold to-brand-goldDark text-brand-dark font-serif font-bold text-lg shadow-xl shadow-brand-gold/20 hover:brightness-110 transition duration-300 transform hover:-translate-y-0.5">
+                    預約深度諮詢
+                </a>
+                <a href="#about" class="w-full sm:w-auto px-8 py-4 rounded-full glass-card text-brand-goldLight font-medium hover:bg-brand-surface/80 transition duration-300 border border-brand-gold/30">
+                    認識向容老師
+                </a>
+            </div>
+
+            <!-- Key Quote Banner -->
+            <div class="pt-12 border-t border-brand-gold/10 max-w-2xl mx-auto">
+                <blockquote class="font-serif italic text-lg sm:text-xl text-brand-goldLight">
+                    「我就是 your 貴人，陪你把突破化為行動。」
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-brand-surface/30 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Left: Profile Image & Badges -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative rounded-2xl overflow-hidden border-2 border-brand-gold/30 shadow-2xl group">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80" alt="向容老師" class="w-full h-[480px] object-cover object-top filter brightness-90 contrast-105 group-hover:scale-105 transition duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-transparent to-transparent opacity-80"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl glass-card">
+                            <h3 class="font-serif text-2xl font-bold text-brand-gold">向容</h3>
+                            <p class="text-xs text-gray-300 tracking-wider mt-1">向容紫微能量學院 創辦人</p>
+                            <p class="text-xs text-brand-goldLight/80 mt-2">20年紫微斗數 / 八字 / 風水布局經驗</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Detailed Narrative -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div>
+                        <span class="text-xs font-cinzel text-brand-gold tracking-widest uppercase">About Xiang Rong</span>
+                        <h2 class="text-2xl sm:text-4xl font-serif font-bold mt-2 gold-gradient-text">
+                            企業主的隱形決策軍師<br/>高階商務能量調頻顧問
+                        </h2>
+                    </div>
+
+                    <p class="text-gray-300 leading-relaxed font-light">
+                        我以<strong class="text-brand-gold font-normal">紫微洞察人生格局</strong>，以<strong class="text-brand-gold font-normal">奇門定位行動方向</strong>，結合能量調頻、補運與風水佈局，為面臨轉折點的個人與企業主，提供兼具前瞻視野與實際執行的策略諮詢。
+                    </p>
+
+                    <p class="text-gray-300 leading-relaxed font-light">
+                        作為決策軍師，我關注每個關鍵問題背後的本質：<span class="text-white font-medium">事業如何突破、資源如何高效配置、關鍵關係如何推進，以及空間能量如何呼應發展需求</span>。從企業風水、宅氣財運到天醫方與關係策略，我將複雜處境梳理成清晰方向，協助你掌握選擇、制定布局，推動改變。
+                    </p>
+
+                    <!-- Core Vision Box -->
+                    <div class="p-6 rounded-xl bg-brand-card/80 border-l-4 border-brand-gold space-y-2">
+                        <h4 class="font-serif font-bold text-brand-gold text-lg">願景與使命</h4>
+                        <p class="text-sm text-gray-300 leading-relaxed">
+                            打造頂尖命理品牌，讓傳統智慧成為面向未來的決策助力。我相信，真正的貴人，是能在關鍵時刻看見你的潛力，並陪你把突破化為行動的人。
+                        </p>
+                    </div>
+
+                    <!-- Highlight Stats -->
+                    <div class="grid grid-cols-3 gap-4 pt-4 border-t border-brand-gold/10 text-center">
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-serif font-bold text-brand-gold">20+</div>
+                            <div class="text-xs text-gray-400 mt-1">年命理實戰經驗</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-serif font-bold text-brand-gold">1000+</div>
+                            <div class="text-xs text-gray-400 mt-1">企業與個人成功案例</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-serif font-bold text-brand-gold">100%</div>
+                            <div class="text-xs text-gray-400 mt-1">一對一專注預約制</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="philosophy" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-xs font-cinzel text-brand-gold tracking-widest uppercase">Methodology</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold gold-gradient-text">三大命理視角 融會貫通</h2>
+                <p class="text-gray-400 text-sm sm:text-base">
+                    紫微斗數看格局，八字辨時機，風水布局環境。從個人特質、運勢節奏到居住與商務空間，讓每一步選擇都有客觀依據。
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1: Zi Wei Dou Shu -->
+                <div class="glass-card p-8 rounded-2xl relative group hover:-translate-y-1 transition duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-brand-purple/40 border border-brand-gold/30 flex items-center justify-center text-brand-gold text-2xl mb-6">
+                        <i class="fa-solid fa-star-and-crescent"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-brand-goldLight mb-3">紫微斗數 • 洞察人生格局</h3>
+                    <p class="text-gray-300 text-sm leading-relaxed font-light">
+                        梳理事業定位、財富觀念與關係課題。深入剖析命盤十二宮，精準看見自身天賦優勢及潛在的慣性盲點，為戰略抉擇提供定海神針。
+                    </p>
+                </div>
+
+                <!-- Card 2: Ba Zi -->
+                <div class="glass-card p-8 rounded-2xl relative group hover:-translate-y-1 transition duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-brand-purple/40 border border-brand-gold/30 flex items-center justify-center text-brand-gold text-2xl mb-6">
+                        <i class="fa-solid fa-hourglass-half"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-brand-goldLight mb-3">八字精解 • 精準把握時機</h3>
+                    <p class="text-gray-300 text-sm leading-relaxed font-light">
+                        分析五行能量結構與大運流年變化。辨別時機冷熱，作為事業進退取捨、投資擴張與規劃人生重大階段的客觀依據。
+                    </p>
+                </div>
+
+                <!-- Card 3: Feng Shui -->
+                <div class="glass-card p-8 rounded-2xl relative group hover:-translate-y-1 transition duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-brand-purple/40 border border-brand-gold/30 flex items-center justify-center text-brand-gold text-2xl mb-6">
+                        <i class="fa-solid fa-compass"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-brand-goldLight mb-3">風水與能量 • 環境氣場布局</h3>
+                    <p class="text-gray-300 text-sm leading-relaxed font-light">
+                        檢視企業辦公室與住宅的方位、動線及空間配置。融合天醫方與宅氣調頻，提出呼應高效率工作與高品質生活的具體布局方案。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 bg-brand-surface/20 border-y border-brand-gold/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-xs font-cinzel text-brand-gold tracking-widest uppercase">Consulting Services</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold gold-gradient-text">專屬策略諮詢服務</h2>
+                <p class="text-gray-400 text-sm sm:text-base">
+                    不只是命盤解讀，更是把複雜問題轉化為清楚的優先順序與具體行動方針。
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Service 1 -->
+                <div class="p-8 rounded-2xl bg-brand-card border border-brand-gold/20 flex flex-col justify-between hover:border-brand-gold/50 transition">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-semibold px-3 py-1 rounded-full bg-brand-gold/10 text-brand-gold border border-brand-gold/30">企業主首選</span>
+                            <i class="fa-solid fa-briefcase text-brand-gold text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-serif font-bold text-white">企業主高階決策諮詢</h3>
+                        <p class="text-gray-300 text-sm leading-relaxed">
+                            針對事業瓶頸、合夥決策、高管配置、投資時機及商業擴張。結合奇門定位與紫微格局，為企業主提供隱形軍師級別的精準策略支援。
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-4 border-t border-gray-800 flex items-center justify-between">
+                        <span class="text-xs text-gray-400">採一對一深度預約</span>
+                        <a href="#contact" onclick="selectService('企業主高階決策諮詢')" class="text-sm text-brand-gold font-semibold hover:underline">了解細節 <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="p-8 rounded-2xl bg-brand-card border border-brand-gold/20 flex flex-col justify-between hover:border-brand-gold/50 transition">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-semibold px-3 py-1 rounded-full bg-brand-purple/50 text-brand-goldLight border border-brand-purple">空間能量調頻</span>
+                            <i class="fa-solid fa-building text-brand-gold text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-serif font-bold text-white">企業與陽宅風水布局</h3>
+                        <p class="text-gray-300 text-sm leading-relaxed">
+                            實地或線上遠端勘測企業辦公室、店面與私人住宅。優化空間動線、財位引氣、天醫方布置，提升企業營運氣場與居住者身心健康。
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-4 border-t border-gray-800 flex items-center justify-between">
+                        <span class="text-xs text-gray-400">含現場/圖紙風水報告</span>
+                        <a href="#contact" onclick="selectService('企業與陽宅風水布局')" class="text-sm text-brand-gold font-semibold hover:underline">了解細節 <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="p-8 rounded-2xl bg-brand-card border border-brand-gold/20 flex flex-col justify-between hover:border-brand-gold/50 transition">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-semibold px-3 py-1 rounded-full bg-brand-gold/10 text-brand-gold border border-brand-gold/30">個人轉折</span>
+                            <i class="fa-solid fa-user-gear text-brand-gold text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-serif font-bold text-white">個人命理解析與補運</h3>
+                        <p class="text-gray-300 text-sm leading-relaxed">
+                            紫微八字合參，盤點事業轉職、理財投資、婚姻情感與流年運勢。深入尋找問題根源，結合能量調頻與補運觀點，突破人生迷惘。
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-4 border-t border-gray-800 flex items-center justify-between">
+                        <span class="text-xs text-gray-400">個人專屬流年報告</span>
+                        <a href="#contact" onclick="selectService('個人命理解析與補運')" class="text-sm text-brand-gold font-semibold hover:underline">了解細節 <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="p-8 rounded-2xl bg-brand-card border border-brand-gold/20 flex flex-col justify-between hover:border-brand-gold/50 transition">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-semibold px-3 py-1 rounded-full bg-brand-purple/50 text-brand-goldLight border border-brand-purple">貴人相助</span>
+                            <i class="fa-solid fa-handshake-simple text-brand-gold text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-serif font-bold text-white">關係策略與奇門擇日</h3>
+                        <p class="text-gray-300 text-sm leading-relaxed">
+                            化解複雜人際關係、合夥爭端、家族課題。運用奇門遁甲定位行動時空點，擇定重大簽約、開市、移徙的最佳時機。
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-4 border-t border-gray-800 flex items-center justify-between">
+                        <span class="text-xs text-gray-400">精密奇門布局</span>
+                        <a href="#contact" onclick="selectService('關係策略與奇門擇日')" class="text-sm text-brand-gold font-semibold hover:underline">了解細節 <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cases" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-xs font-cinzel text-brand-gold tracking-widest uppercase">Success Stories</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold gold-gradient-text">案例展示與真實見證</h2>
+                <p class="text-gray-400 text-sm sm:text-base">
+                    陪伴無數客戶在重要關鍵時刻看清局勢、精準決策。
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Case 1 -->
+                <div class="glass-card p-6 rounded-2xl space-y-4 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex text-brand-gold text-sm space-x-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <h4 class="font-serif font-bold text-white text-lg">科技公司創辦人：重組關鍵高管與總部風水布局</h4>
+                        <p class="text-gray-300 text-sm leading-relaxed italic">
+                            「當時公司正面臨核心業務轉型期，向容老師透過紫微與八字分析出我們合夥人的盲點，並針對總部辦公室進行風水財位布局。三個月後順利引進關鍵投資人，業務步上正軌。」
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-gray-800 flex items-center justify-between text-xs text-gray-400">
+                        <span>— 林總經理 (台北)</span>
+                        <span class="text-brand-gold">企業顧問案例</span>
+                    </div>
+                </div>
+
+                <!-- Case 2 -->
+                <div class="glass-card p-6 rounded-2xl space-y-4 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex text-brand-gold text-sm space-x-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <h4 class="font-serif font-bold text-white text-lg">資深高管：職涯中年轉折與奇門補運</h4>
+                        <p class="text-gray-300 text-sm leading-relaxed italic">
+                            「面臨跨國公司高層內鬥與去留抉擇，向容老師幫我看清了自己的天命優勢與流年節奏，建議我在特定時機主動爭取派駐機會，如今事業達到新的巔峰。」
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-gray-800 flex items-center justify-between text-xs text-gray-400">
+                        <span>— Sarah C. (新加坡)</span>
+                        <span class="text-brand-gold">個人事業案例</span>
+                    </div>
+                </div>
+
+                <!-- Case 3 -->
+                <div class="glass-card p-6 rounded-2xl space-y-4 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex text-brand-gold text-sm space-x-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <h4 class="font-serif font-bold text-white text-lg">連鎖餐飲品牌：店面選址與宅氣財運調頻</h4>
+                        <p class="text-gray-300 text-sm leading-relaxed italic">
+                            「老師建議我們避開原本看好但氣場停滯的店面，重新挑選天醫方位的旗艦店址，並在開業時運用奇門擇日。開幕首月即創下品牌歷年最高業績。」
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-gray-800 flex items-center justify-between text-xs text-gray-400">
+                        <span>— 陳創辦人 (台中)</span>
+                        <span class="text-brand-gold">風水店面案例</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-brand-surface/40 relative">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="glass-card rounded-3xl p-8 sm:p-12 border border-brand-gold/30 relative overflow-hidden">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+
+                    <!-- Left Column Info -->
+                    <div class="lg:col-span-5 space-y-6">
+                        <div>
+                            <span class="text-xs font-cinzel text-brand-gold tracking-widest uppercase">Reservation</span>
+                            <h2 class="text-3xl font-serif font-bold gold-gradient-text mt-2">預約深度諮詢</h2>
+                        </div>
+
+                        <p class="text-gray-300 text-sm leading-relaxed font-light">
+                            採嚴格預約制，為每一次諮詢保留充分的專注與品質。請填寫下方資訊，我們將有專人於 24 小時內與您聯繫確認細節。
+                        </p>
+
+                        <div class="space-y-4 pt-4 border-t border-brand-gold/10">
+                            <div class="flex items-start space-x-3 text-sm text-gray-300">
+                                <i class="fa-solid fa-shield-halved text-brand-gold mt-1"></i>
+                                <span>全程嚴格恪守客戶隱私與商業保密協定。</span>
+                            </div>
+                            <div class="flex items-start space-x-3 text-sm text-gray-300">
+                                <i class="fa-solid fa-clock text-brand-gold mt-1"></i>
+                                <span>諮詢形式：實體私人會所 / 全球線上高畫質視訊。</span>
+                            </div>
+                        </div>
+
+                        <!-- Direct Contact Cards -->
+                        <div class="p-4 rounded-xl bg-brand-dark/50 border border-brand-gold/10 space-y-2">
+                            <div class="text-xs text-brand-gold font-semibold">助理專線 / Line Official</div>
+                            <div class="text-sm font-mono text-white">@xiangrong_academy</div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column Form -->
+                    <div class="lg:col-span-7">
+                        <form id="booking-form" onsubmit="handleBookingSubmit(event)" class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-medium text-gray-300 uppercase tracking-wider mb-2">您的姓名 / 稱呼 *</label>
+                                <input type="text" required placeholder="例：王大明 先生/女士" class="w-full px-4 py-3 rounded-xl bg-brand-dark/80 border border-brand-gold/20 text-white focus:outline-none focus:border-brand-gold transition text-sm">
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-medium text-gray-300 uppercase tracking-wider mb-2">聯絡電話 *</label>
+                                    <input type="tel" required placeholder="0912-345-678" class="w-full px-4 py-3 rounded-xl bg-brand-dark/80 border border-brand-gold/20 text-white focus:outline-none focus:border-brand-gold transition text-sm">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-medium text-gray-300 uppercase tracking-wider mb-2">電子郵件 *</label>
+                                    <input type="email" required placeholder="example@domain.com" class="w-full px-4 py-3 rounded-xl bg-brand-dark/80 border border-brand-gold/20 text-white focus:outline-none focus:border-brand-gold transition text-sm">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-medium text-gray-300 uppercase tracking-wider mb-2">諮詢項目 *</label>
+                                <select id="service-select" required class="w-full px-4 py-3 rounded-xl bg-brand-dark/80 border border-brand-gold/20 text-white focus:outline-none focus:border-brand-gold transition text-sm">
+                                    <option value="">請選擇諮詢主題</option>
+                                    <option value="企業主高階決策諮詢">企業主高階決策諮詢</option>
+                                    <option value="企業與陽宅風水布局">企業與陽宅風水布局</option>
+                                    <option value="個人命理解析與補運">個人命理解析與補運</option>
+                                    <option value="關係策略與奇門擇日">關係策略與奇門擇日</option>
+                                    <option value="其他客製化諮詢">其他客製化諮詢</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-medium text-gray-300 uppercase tracking-wider mb-2">期望諮詢方式</label>
+                                <div class="flex items-center space-x-6 text-sm text-gray-300 pt-1">
+                                    <label class="flex items-center space-x-2 cursor-pointer">
+                                        <input type="radio" name="consult_type" value="線上視訊" checked class="text-brand-gold focus:ring-0">
+                                        <span>線上視訊</span>
+                                    </label>
+                                    <label class="flex items-center space-x-2 cursor-pointer">
+                                        <input type="radio" name="consult_type" value="實體會所" class="text-brand-gold focus:ring-0">
+                                        <span>實體會所 (預約制)</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-medium text-gray-300 uppercase tracking-wider mb-2">請簡述您目前面臨的課題或需求</label>
+                                <textarea rows="4" placeholder="例如：事業面臨擴張方向抉擇、辦公室風水檢視、個人流年事業轉折點..." class="w-full px-4 py-3 rounded-xl bg-brand-dark/80 border border-brand-gold/20 text-white focus:outline-none focus:border-brand-gold transition text-sm resize-none"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-brand-gold to-brand-goldDark text-brand-dark font-serif font-bold text-base shadow-lg shadow-brand-gold/20 hover:brightness-110 transition duration-300">
+                                提交預約申請
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="success-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
+        <div class="glass-card max-w-md w-full p-8 rounded-2xl border border-brand-gold/40 text-center space-y-6">
+            <div class="w-16 h-16 rounded-full bg-brand-gold/20 text-brand-gold border border-brand-gold/50 flex items-center justify-center mx-auto text-3xl">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <div class="space-y-2">
+                <h3 class="text-2xl font-serif font-bold gold-gradient-text">預約申請已送出</h3>
+                <p class="text-sm text-gray-300 leading-relaxed">
+                    感謝您的信任。向容紫微能量學院諮詢團隊將於 24 小時內與您聯繫，為您排定專屬諮詢時間。
+                </p>
+            </div>
+            <button onclick="closeModal()" class="w-full py-3 rounded-xl bg-brand-gold text-brand-dark font-bold hover:brightness-110 transition">
+                確定
+            </button>
+        </div>
+    </div>
+
+    <footer class="bg-brand-dark border-t border-brand-gold/10 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded-full border border-brand-gold/40 flex items-center justify-center bg-brand-surface/50">
+                    <span class="font-cinzel text-brand-gold text-sm">向</span>
+                </div>
+                <span class="font-serif text-sm font-bold text-gray-300">向容紫微能量學院</span>
+            </div>
+
+            <p class="text-xs text-gray-500 text-center sm:text-right">
+                © 2026 向容紫微能量學院. All Rights Reserved.<br/>
+                打造頂尖命理品牌 • 讓傳統智慧成為面向未來的決策助力
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Select Service helper
+        function selectService(serviceName) {
+            const selectElement = document.getElementById('service-select');
+            if (selectElement) {
+                selectElement.value = serviceName;
+            }
+        }
+
+        // Form Submit Handler
+        function handleBookingSubmit(event) {
+            event.preventDefault();
+            const modal = document.getElementById('success-modal');
+            modal.classList.add('modal-active');
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('success-modal');
+            modal.classList.remove('modal-active');
+            document.getElementById('booking-form').reset();
+        }
+
+        // Scroll header effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-brand-dark/95', 'shadow-lg');
+            } else {
+                navbar.classList.remove('bg-brand-dark/95', 'shadow-lg');
+            }
+        });
+    </script>
+</body>
+</html>
