@@ -53,3 +53,40 @@
 .line-capture .line-intro .btn{min-width:270px}
 @media(max-width:780px){.line-capture{padding:65px 0 72px}.line-capture .line-intro{text-align:left}.line-capture .line-intro .lead{margin:0 0 27px}.line-capture .line-intro .btn{width:100%;min-width:0}}
 
+
+
+/* V4.6 — viewport-driven mobile layout; semantic headline lines */
+@media(max-width:780px){
+  html{ -webkit-text-size-adjust:100%; text-size-adjust:100%; }
+  .container,.header-inner{width:calc(100% - 2 * clamp(16px,5vw,24px));}
+  body{font-size:1rem;line-height:1.8}
+  .header-inner{gap:8px;height:auto;min-height:72px;padding-block:10px}
+  .brand{min-width:0;flex:1;gap:9px;white-space:normal}
+  .brand-seal{flex:0 0 36px;width:36px;height:36px}
+  .brand-word{min-width:0;font-size:clamp(17px,5vw,22px);letter-spacing:0}
+  .brand-word small{font-size:clamp(10px,2.8vw,12px);letter-spacing:0;line-height:1.5}
+  .nav-action{flex:none}.mobile-menu{top:100%;max-height:calc(100dvh - 72px)}
+  .hero{padding:clamp(24px,7vw,48px) 0 48px}
+  .hero-grid,.hero-copy,.split>*,.section-head>*,.feature-inner>*,.social-card,.booking-simple-grid>*{min-width:0;max-width:100%}
+  .hero h1{font-size:clamp(25px,9vw,46px);line-height:1.45;letter-spacing:0;text-wrap:wrap;margin-bottom:16px}
+  .hero h1 .hero-line{display:block;white-space:nowrap}
+  .hero h1 br{display:none}
+  .hero-copy>p.eyebrow{font-size:clamp(11px,3.1vw,13px);letter-spacing:.045em;line-height:1.55;margin-bottom:16px}
+  .hero .eyebrow .term{display:inline-block;white-space:nowrap}
+  .hero-copy>p:not(.eyebrow){font-size:1rem;line-height:1.85;margin-bottom:20px}
+  .section-title,.booking-hero .section-title,.booking-simple-grid h2{font-size:clamp(25px,7.2vw,42px);line-height:1.5;letter-spacing:0;overflow-wrap:break-word;text-wrap:balance}
+  .section{padding:clamp(48px,12vw,83px) 0}
+  .lead,.about-copy .lead,.section-head p:last-child,.booking-simple-grid p,.privacy-copy p{font-size:1rem}
+  .btn{max-width:100%;min-width:0;padding-inline:16px;white-space:normal;line-height:1.5;text-align:center;min-height:48px}
+  .service-row h3,.social-card h3{font-size:clamp(21px,6vw,27px)}
+  .testimony-scroll{margin-right:0;max-width:100%;grid-auto-columns:minmax(0,82%)}
+  .testimony-img{width:100%}
+  .trust-bar .container{justify-content:flex-start;gap:8px 12px}
+  .footer-brand{font-size:clamp(21px,6vw,26px)}
+  .footer-bottom,.privacy-copy{overflow-wrap:anywhere}
+  .field,.field input,.field select,.field textarea,.option-tile,.summary{min-width:0;max-width:100%}
+}
+@media(max-width:480px){
+  .hero h1{font-size:min(9.1vw,38px)}
+  .hero h1 .hero-line{white-space:normal;word-break:keep-all;overflow-wrap:anywhere}
+}
