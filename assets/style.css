@@ -6,6 +6,23 @@
 @media(max-width:360px){.container{width:calc(100% - 34px)}.header-inner{width:calc(100% - 30px)}.brand{gap:7px}.brand-word{font-size:17px}.brand-seal{width:34px;height:34px;font-size:19px}.hero h1{font-size:39px}.section-title{font-size:33px}.trust-item{font-size:11px}.trust-item b{font-size:20px}.service-row h3{font-size:23px}.testimony-scroll{margin-right:-17px}.social-card{padding:25px}.choice-inline label{padding:9px 11px}.cal-day{min-height:36px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
 
+/* V4.5 — resilient mobile typography for enlarged Android text */
+@media(max-width:780px){
+  .hero h1,.section-title,.booking-simple-grid h2,.booking-hero .section-title{
+    max-inline-size:100%;
+    letter-spacing:0;
+    text-wrap:balance;
+    overflow-wrap:normal;
+  }
+  .hero-copy>p,.lead,.text-muted,.service-row p,.social-card p,.feature-inner p{
+    overflow-wrap:anywhere;
+  }
+}
+@media(max-width:380px){
+  .hero h1{font-size:36px;line-height:1.42}
+  .section-title{font-size:31px;line-height:1.5}
+}
+
 /* V4.1 — public Google Calendar booking link */
 .google-booking-primary{background:#fffdf9;padding:clamp(26px,4vw,47px);border-left:3px solid var(--red);margin:0 0 38px}.google-booking-primary h2{font-family:var(--serif);font-size:clamp(27px,3vw,39px);line-height:1.45;margin:0 0 15px}.google-booking-primary>p:not(.eyebrow){font-size:17px;line-height:1.85;color:var(--brown);max-width:650px}.google-booking-primary .calendar-primary-cta{margin:6px 0 20px;min-width:320px}.google-booking-primary .calendar-payment-note{margin:0 0 8px;font-size:16px!important;color:#60483f!important}.google-booking-primary .calendar-setting-note{margin:0;font-size:14px!important;color:var(--muted)!important}.manual-divider{display:flex;gap:20px;align-items:center;justify-content:center;margin:0 0 25px;text-align:center;color:var(--muted);font-size:17px}.manual-divider:before,.manual-divider:after{content:"";height:1px;background:var(--line);flex:1;min-width:10px}
 @media(max-width:680px){.google-booking-primary{padding:25px 21px 27px;margin-bottom:34px}.google-booking-primary h2{font-size:29px}.google-booking-primary>p:not(.eyebrow){font-size:17px}.google-booking-primary .calendar-primary-cta{min-width:0;width:100%;min-height:58px;font-size:17px;letter-spacing:.02em}.manual-divider{font-size:15px;gap:12px}}
@@ -35,3 +52,4 @@
 .line-capture .line-intro .lead{max-width:690px;margin:0 auto 32px}
 .line-capture .line-intro .btn{min-width:270px}
 @media(max-width:780px){.line-capture{padding:65px 0 72px}.line-capture .line-intro{text-align:left}.line-capture .line-intro .lead{margin:0 0 27px}.line-capture .line-intro .btn{width:100%;min-width:0}}
+
